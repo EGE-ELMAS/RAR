@@ -1,0 +1,13 @@
+seed: 42
+temperature: 0.0
+languages: [en, tr]
+shot_counts: [0, 5]
+retrievers: [none, random, kate, pure, rar]
+prompt_strategies:
+  - standard
+  - zs_static_cot
+  - fs_static_cot
+  - self_questioning
+  - gold_label_cot
+  - output_format_cot
+output_schema_version: 1

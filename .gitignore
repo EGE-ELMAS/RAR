@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+.venv*/
+venv*/
+dist/
+build/
+*.egg-info/
+
+# Notebooks and editors
+.ipynb_checkpoints/
+.vscode/
+.idea/
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Restricted i2b2/VA data: never commit clinical text or derived text-bearing files
+data/raw/**
+data/interim/**
+data/processed/**
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+!data/processed/.gitkeep
+!data/README.md
+
+# Local model artifacts and caches
+checkpoints/
+/models/
+.cache/
+wandb/
+mlruns/
+
+# Raw API responses may reproduce protected text
+results/raw/**
+!results/raw/.gitkeep
+
+# Generated evaluation artifacts remain local. Curated label-only predictions
+# under results/predictions and their committed summaries are intentionally tracked.
+results/figures/**
+results/metrics/**
+!results/figures/.gitkeep
+!results/metrics/.gitkeep
+
+# OS files
+.DS_Store
+Thumbs.db

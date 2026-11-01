@@ -1,0 +1,41 @@
+retrievers:
+  kate:
+    en: roberta-base
+    tr: TURKCELL/roberta-base-turkish-uncased
+  rar:
+    en: roberta-large
+    tr: TURKCELL/roberta-base-turkish-uncased
+  pure_rr:
+    en: bert-base-uncased
+    tr: dbmdz/bert-base-turkish-uncased
+
+baselines:
+  bert:
+    en: bert-base-uncased
+    tr: dbmdz/bert-base-turkish-uncased
+  pure:
+    en: bert-base-uncased
+    tr: dbmdz/bert-base-turkish-uncased
+
+llms:
+  gemini_1_5_flash:
+    provider: gemini
+    model: gemini-1.5-flash-latest
+  gemini_2_0_flash:
+    provider: gemini
+    model: gemini-2.0-flash
+  gemini_3_0_flash:
+    provider: gemini
+    model: gemini-3.0-flash
+  gpt_4o_mini:
+    provider: openai
+    model: gpt-4o-mini
+  gpt_5_4_mini:
+    provider: openai
+    model: gpt-5.4-mini
+  deepseek_v3:
+    provider: deepseek
+    model: deepseek-v3
+  deepseek_v4_flash:
+    provider: deepseek
+    model: deepseek-v4-flash

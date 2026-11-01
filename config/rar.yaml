@@ -1,0 +1,22 @@
+seed: 42
+train:
+  epochs: 3
+  batch_size: 16
+  learning_rate: 3.0e-5
+  temperature: 0.05
+  max_length: 256
+  checkpoint_metric: knn_micro_f1
+pair_generation:
+  positive_neighbors: 5
+  negative_neighbors: 5
+  sentence_weight: 0.3333333333
+  entity_weight: 0.3333333333
+  relation_weight: 0.3333333333
+  subject_weight: 0.5
+  object_weight: 0.5
+retrieval:
+  candidate_pool_size: 20
+  sentence_weight: 0.5
+  entity_weight: 0.5
+  subject_weight: 0.5
+  object_weight: 0.5
